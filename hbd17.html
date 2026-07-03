@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VOL.17 — Ananya Edition</title>
+
+<link rel="stylesheet" href="hbd17.css"/>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=Shippori+Mincho:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="stars"></div>
+<div class="glow"></div>
+<div class="sakura-layer" id="sakuraLayer"></div>
+<div class="glitch-overlay" id="glitchOverlay"></div>
+
+<!-- INTRO SCREEN -->
+<div id="intro" class="screen active">
+    <div class="center">
+        <h1 class="title">VOL.17</h1>
+        <h2 class="subtitle">ANANYA</h2>
+        <p class="tagline">a story about one very chaotic year.</p>
+        <button id="beginBtn" class="btn-elegant">BEGIN</button>
+    </div>
+</div>
+
+<!-- SHOJI TRANSITION -->
+<div id="shojiLeft" class="shoji shoji-left"></div>
+<div id="shojiRight" class="shoji shoji-right"></div>
+
+<!-- MAIN APP -->
+<div id="app" class="screen">
+
+    <div id="episodeMenu" class="menu">
+        <p class="vol-eyebrow">a chapter for</p>
+        <h2 class="vol-heading">VOL. 17 <em>—</em> ANANYA</h2>
+
+        <button class="episode-card" data-ep="1">
+            <h3>EPISODE 01</h3>
+            <p>The Conversion Arc</p>
+            <span id="status1">STATUS: PENDING</span>
+        </button>
+
+        <button class="episode-card" data-ep="2">
+            <h3>EPISODE 02</h3>
+            <p>Certified Chaos</p>
+            <span id="status2">STATUS: PENDING</span>
+        </button>
+
+        <button class="episode-card locked" data-ep="3" id="card3">
+            <h3>EPISODE 03</h3>
+            <p>One Last Thing...</p>
+            <span id="status3">LOCKED — finish episodes 01 &amp; 02</span>
+        </button>
+    </div>
+
+    <!-- EPISODE VIEW -->
+    <div id="episodeView" class="episode hidden"></div>
+
+</div>
+
+<script src="hbd17.js"></script>
+</body>
+</html>
